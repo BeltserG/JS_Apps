@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&family=Sigmar+One&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+  color: rgb(211, 189, 148);
+}
+
+.cd-header {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background-forest.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-width: 700px;
+  height: 220px;
+  border-radius: 1.5rem;
+  font-family: "Sigmar One", cursive;
+}
+
+.cd-con {
+  display: flex;
+  text-align: center;
+}
+
+.number {
+  font-size: 3rem;
+  width: 2.5em;
+  line-height: 1;
+  margin: 0;
+}
+
+.text {
+  font-size: 0.7rem;
+}/*# sourceMappingURL=countdown.css.map */
