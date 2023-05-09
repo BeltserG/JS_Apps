@@ -12,25 +12,26 @@
         <section class="q-a">
             <h3 class="question" id="question">Question</h3>
             <ul class="answers">
-                <li class="answer">
-                    <input type="radio" name="answer" id="a">
+                <li>
+                    <input class="answer" type="radio" name="answer" value="a">
                     <label for="a" id="a_text">a</label>
                 </li>
-                <li class="answer">
-                    <input type="radio" name="answer" id="b">
+                <li>
+                    <input class="answer" type="radio" name="answer" value="b">
                     <label for="b" id="b_text">b</label>
                 </li>
-                <li class="answer">
-                    <input type="radio" name="answer" id="c">
+                <li>
+                    <input class="answer" type="radio" name="answer" value="c">
                     <label for="c" id="c_text">c</label>
                 </li>
-                <li class="answer">
-                    <input type="radio" name="answer" id="d">
+                <li>
+                    <input class="answer" type="radio" name="answer" value="d">
                     <label for="d" id="d_text">d</label>
                 </li>
             </ul>
-            <div id="error"></div>
         </section>
+        <p id="error" class="error"></p>
+        <div id="progress_bar"></div>
         <button type="submit" class="btn" id="btn">Submit</button>
         <script src="quiz.js"></script>
     </section>

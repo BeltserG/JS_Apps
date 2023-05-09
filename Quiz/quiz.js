@@ -50,15 +50,53 @@ function loadQuiz(){
     d_text.innerHTML = currentQuiz.an_d;
 }
 
-btn.addEventListener("click", () =>{
-    currentQ++;
-    // while(true){
+// while(currentQ < quizData.length){
+//     btn.addEventListener("click", () =>{
+//         const clicked = () => {
+//             const clicked = document.getElementsByName("answer");
+//             for(let i = 0; i < clicked.length; i++){
+//                 if (clicked[i].checked){
+//                     return true;
+//                 }
+//             }
+//             return false;
+//         };
+//         if(clicked){
+//             currentQ++;
+//             loadQuiz();
+//         }else{
+//             const error = document.getElementById('error');
+//             error.innerHTML = "Choose answer";
+//         };
+//     });
+// };
 
-    // }
-    if (currentQ < quizData.length){
+// while(currentQ < quizData.length){
+//     console.log(currentQ, quizData.length);
+//     btn.addEventListener("click", () => {
+
+//     })
+//     currentQ++;
+// };
+
+btn.addEventListener("click", () =>{
+    const answerChosen = () => {
+        const clicked = document.getElementsByName("answer");
+        for(let i = 0; i < clicked.length; i++){
+            if (clicked[i].checked){
+                return true;
+            }
+        }
+        return false;
+    };
+
+    if(answerChosen()){
+        const error = document.getElementById('error');
+        error.innerHTML = "";
+        currentQ++;
         loadQuiz();
-    }
-    else{
-        alert("Done!");
-    }
+    }else{
+        const error = document.getElementById('error');
+        error.innerHTML = "Choose answer";
+    };
 });
