@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="qz-container">
+        <section class="q-a">
+            <h3 class="question" id="question">Question</h3>
+            <ul class="answers">
+                <li class="answer">
+                    <input type="radio" name="answer" id="a">
+                    <label for="a" id="a_text">a</label>
+                </li>
+                <li class="answer">
+                    <input type="radio" name="answer" id="b">
+                    <label for="b" id="b_text">b</label>
+                </li>
+                <li class="answer">
+                    <input type="radio" name="answer" id="c">
+                    <label for="c" id="c_text">c</label>
+                </li>
+                <li class="answer">
+                    <input type="radio" name="answer" id="d">
+                    <label for="d" id="d_text">d</label>
+                </li>
+            </ul>
+            <div id="error"></div>
+        </section>
+        <button type="submit" class="btn" id="btn">Submit</button>
+        <script src="quiz.js"></script>
+    </section>
+</body>
+</html>
