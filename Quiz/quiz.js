@@ -38,7 +38,9 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const btn = document.getElementById("btn");
+
 let correctAnswers = 0;
+const qLength = quizData.length;
 
 loadQuiz();
 
@@ -59,15 +61,18 @@ btn.addEventListener("click", () =>{
         const error = document.getElementById('error');
         error.innerHTML = "";
         currentQ++;
-        if (currentQ < quizData.length){
+        if (currentQ < qLength){
             loadQuiz();
         }
         else{
-            alert("Correct answers: " + correctAnswers + `/${quizData.length}`);
+            const finalResult = document.getElementById("quiz")
+            finalResult.innerHTML = `<h3 class="final-result">Thank you! Your final result is ${correctAnswers}/${qLength}
+            </h3><button class="btn" onclick="location.reload()">Try again</button>`;
+            // alert("Correct answers: " + correctAnswers + `/${qLength}`);
         };
     }else{
         const error = document.getElementById('error');
-        error.innerHTML = "Choose answer";
+        error.innerHTML = "Choose an answer";
     };
 });
 
