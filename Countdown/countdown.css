@@ -10,7 +10,7 @@
   font-size: 1.5rem;
 }
 
-.container {
+.cd-container {
   margin: auto;
   display: flex;
   flex-direction: column;
