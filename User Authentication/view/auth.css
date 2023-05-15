@@ -22,6 +22,10 @@ html {
   box-shadow: 13px 0px 38px 13px rgba(149, 247, 255, 0.56);
 }
 
+.header-sign-in {
+  text-transform: uppercase;
+}
+
 .col-center {
   display: flex;
   flex-direction: column;
@@ -30,7 +34,7 @@ html {
   text-align: center;
 }
 
-.input-cont {
+.form-input-text {
   padding: 0.5rem 1rem;
   width: 50%;
 }
