@@ -6,32 +6,38 @@
   color: #d7eef0;
 }
 
-body {
-  background-color: #d7eef0;
-}
-
-html {
+html, body {
+  padding: 0;
   margin: 0;
 }
 
+body {
+  background: linear-gradient(45deg, rgb(5, 21, 75), rgb(25, 84, 122));
+  min-height: 100vh;
+}
+
 .auth-container {
-  background-color: #17a5dd;
+  background-color: rgba(12, 13, 94, 0.9);
   border-radius: 1rem;
-  width: 300px;
-  padding: 1rem;
-  box-shadow: 13px 0px 38px 13px rgba(149, 247, 255, 0.56);
+  width: 20vw;
+  height: 50vh;
+  padding: 3rem;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.auth-container::before {
+  content: "";
+  background-color: rgba(29, 103, 126, 0.3);
+  border-radius: 1rem;
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  transform: rotate(5deg);
 }
 
 .header-sign-in {
   text-transform: uppercase;
-}
-
-.col-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .form-input-text {
@@ -41,4 +47,12 @@ html {
 
 .input-field {
   width: 200%;
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=auth.css.map */
