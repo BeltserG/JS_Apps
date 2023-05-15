@@ -1,0 +1,40 @@
+@import url("'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #d7eef0;
+}
+
+body {
+  background-color: #d7eef0;
+}
+
+html {
+  margin: 0;
+}
+
+.auth-container {
+  background-color: #17a5dd;
+  border-radius: 1rem;
+  width: 300px;
+  padding: 1rem;
+  box-shadow: 13px 0px 38px 13px rgba(149, 247, 255, 0.56);
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-cont {
+  padding: 0.5rem 1rem;
+  width: 50%;
+}
+
+.input-field {
+  width: 200%;
+}/*# sourceMappingURL=auth.css.map */
