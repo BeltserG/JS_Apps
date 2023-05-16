@@ -1,4 +1,5 @@
 @import url("'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("reset.css");
 *, *::before, *::after {
   box-sizing: border-box;
   text-align: center;
@@ -21,9 +22,22 @@ body {
   border-radius: 1rem;
   width: 20vw;
   height: 50vh;
-  padding: 3rem;
+  padding: 2rem;
   position: relative;
   border-radius: 1rem;
+}
+
+.auth-container h1 {
+  font-size: 2.75rem;
+  margin: 0;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.auth-container h1 + div {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
 }
 
 .auth-container::before {
@@ -41,8 +55,28 @@ body {
 }
 
 .form-input-text {
-  padding: 0.5rem 1rem;
-  width: 50%;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  width: 100%;
+  background: rgba(18, 223, 172, 0.575);
+}
+
+.form-input-text span {
+  color: rgb(56, 231, 173);
+  margin-right: 0.5rem;
+}
+
+.form-input-text input[type=text] {
+  background: rgba(18, 223, 172, 0);
+  outline: 0;
+  border: 0;
+  text-align: left;
+}
+
+.form-other {
+  font-size: 0.8rem;
+  align-items: center;
 }
 
 .input-field {
@@ -55,4 +89,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.row {
+  display: flex;
 }/*# sourceMappingURL=auth.css.map */
