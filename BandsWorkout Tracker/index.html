@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header></header>
+    <main>
+        <table class="tracker-table">
+            <thead class="table-head">
+                <tr class="head-row">
+                    <th>Date</th>
+                    <th>Exercise</th>
+                    <th>Workload</th>
+                    <th>Repeats</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr class="table-body__data">
+                    <td>
+                        <input type="date" class="date">
+                    </td>
+                    <td>
+                        <select name="" id="" class="exercise">
+                            <option value="squat" id="squat">squat</option>
+                            <option value="lunge" id="lunge">lunge</option>
+                            <option value="push-up" id="push-up">push-up</option>
+                            <option value="shoulder-fly" id="shoulder-fly">shoulder-fly</option>
+                            <option value="pull-up" id="pull-up">pull-up</option>
+                            <option value="biceps-curl" id="biceps-curl">biceps-curl</option>
+                            <option value="bench-press" id="bench-press">bench-press</option>
+                            <option value="military-press" id="military-press">military-press</option>
+                            <option value="chest-deep" id="chest-deep">chest-deep</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" id="" class="workload">
+                            <option value="yellow" id="yellow">yellow</option>
+                            <option value="red" id="red">red</option>
+                            <option value="black" id="black">black</option>
+                            <option value="purple" id="purple">purple</option>
+                            <option value="green" id="green">green</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="" class="repeats">
+                        <span class="repeats">repeats</span>
+                    </td>
+                    <td>
+                        <button type="submit" class="erase-btn">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody class="add">
+                <tr class="add__row">
+                    <td><button class="add__btn">Add+</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>     
+</body>
+<script type="text/javascript" src="control.js"></script>
+</html>
