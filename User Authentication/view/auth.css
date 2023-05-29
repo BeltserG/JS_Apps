@@ -121,6 +121,18 @@ body {
   border: 2px solid red;
 }
 
+.error-username,
+.error-password {
+  align-self: flex-end;
+  font-size: 0.6rem;
+  margin-right: 1rem;
+  color: rgba(179, 18, 18, 0);
+}
+
+.error-active {
+  color: rgb(179, 18, 18);
+}
+
 .register-link {
   margin: 0.2rem 0;
 }
