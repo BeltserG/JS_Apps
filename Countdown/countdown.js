@@ -1,9 +1,10 @@
-const launchDay = "1 Sep 2023";
-
+let launchDay = "1 Sep 2025";
 const daysElement = document.getElementById("days")
 const hoursElement = document.getElementById("hours")
 const minutesElement = document.getElementById("minutes")
 const secondsElement = document.getElementById("seconds")
+
+const submit = document.querySelector("#timer-form");
 
 function left(){
     let currentDate = new Date();
@@ -24,3 +25,9 @@ function left(){
 left();
 
 setInterval(left, 1000);
+
+submit.addEventListener('submit', (e) => {
+    
+    e.preventDefault();
+    launchDay = document.querySelector('.timer-date-time').value;
+})
