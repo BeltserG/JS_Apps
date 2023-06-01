@@ -1,0 +1,152 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(46, 161, 228);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+:root {
+  --position:0;
+  --rotation:0;
+}
+
+.clock {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-face {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  position: relative;
+  background: rgb(233, 226, 166);
+  background: linear-gradient(60deg, rgb(233, 226, 166), rgb(63, 91, 114));
+  box-shadow: 0 0 1rem 1rem rgb(0, 0, 0);
+}
+
+.clock-number {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(30deg * var(--position)));
+  font-size: 2.5vw;
+  padding: 0.5rem;
+}
+
+.clock-number span {
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--position)));
+}
+
+.number1 {
+  --position: 1;
+}
+
+.number2 {
+  --position: 2;
+}
+
+.number3 {
+  --position: 3;
+}
+
+.number4 {
+  --position: 4;
+}
+
+.number5 {
+  --position: 5;
+}
+
+.number6 {
+  --position: 6;
+}
+
+.number7 {
+  --position: 7;
+}
+
+.number8 {
+  --position: 8;
+}
+
+.number9 {
+  --position: 9;
+}
+
+.number10 {
+  --position: 10;
+}
+
+.number11 {
+  --position: 11;
+}
+
+.number12 {
+  --position: 12;
+}
+
+.arrow-circle {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  z-index: 10;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(var(--rotation));
+}
+
+.spot {
+  background: rgb(0, 0, 0);
+  z-index: 13;
+  border-radius: 50%;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: translate(-50%, 50%);
+}
+
+.hour {
+  width: 0.8vw;
+  height: 28%;
+  background: black;
+  z-index: 10;
+}
+
+.minute {
+  width: 0.4vw;
+  height: 32%;
+  background: rgb(23, 24, 23);
+  z-index: 11;
+}
+
+.second {
+  width: 0.2vw;
+  height: 38%;
+  background: rgb(255, 0, 0);
+  z-index: 12;
+}/*# sourceMappingURL=clock.css.map */
