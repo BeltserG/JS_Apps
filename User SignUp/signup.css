@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+*:not([class^=fa]) {
+  font-family: "Inter", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.user-data__password {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: rgb(241, 241, 241);
+}
+
+.user-data__password p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.user-data__password-container div {
+  display: flex;
+  background: white;
+  width: 80%;
+  border: 2px solid rgb(32, 166, 211);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.user-data__password--input {
+  outline: 0;
+  border: 0;
+  flex: 1;
+}
+
+.password-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.valid {
+  color: green;
+  opacity: 0.6;
+}
+
+.password-checklist li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.password-checklist li i {
+  margin-right: 0.6rem;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=signup.css.map */
