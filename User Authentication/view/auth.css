@@ -64,7 +64,7 @@ body {
 
 .form-input-text {
   padding: 0.3rem;
-  margin: 0.4rem 0;
+  margin: 0.5rem 0 0.1rem 0;
   border-radius: 1rem;
   background: rgba(15, 182, 140, 0.575);
   border: 2px solid rgba(15, 182, 140, 0);
@@ -118,7 +118,7 @@ body {
 }
 
 .error-border {
-  border: 2px solid red;
+  border: 2px solid rgb(179, 18, 18);
 }
 
 .error-username,
